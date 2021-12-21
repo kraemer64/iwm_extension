@@ -8,18 +8,18 @@ class Email extends AbstractEntity
 {
     protected $adress = '';
 
-    public function __construct(string $adress = '')
-    {
-        $this->setEmail($adress);
-    }
+    protected $topic = '';
 
-    public function setAdress(string $firstname): void
-    {
-        $this->adress = $adress;
-    }
+    protected $message = '';
 
-    public function getAdress():string
+    protected $password = '';
+
+    public function __construct(string $adress = '', string $topic = 'Changed password', 
+                                string $message = 'Here is your new password: ', string $password = '')
     {
-        return $this->adress;
+        $this->setAdress($adress);
+        $this->setTopic($topic);
+        $this->setMessage($message);
+        $this->createPassword($password);
     }
 }
