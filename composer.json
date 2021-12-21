@@ -1,0 +1,24 @@
+{
+    "name": "myvendor/iwm-extension",
+    "type": "typo3-cms-extension",
+    "description": "An extension for IWM.",
+    "authors": [
+      {
+        "name": "Daniel Krämer",
+        "role": "Developer",
+        "homepage": "https://nowhere.org"
+      }
+    ],
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+           "MyVendor\\IwmExtension\\": "Classes"
+        }
+    },
+    "require": {
+        "typo3/cms-core": "^9"
+    },
+    "replace": {
+        "myvendor/iwm-extension": "self.version"
+    }
+}
