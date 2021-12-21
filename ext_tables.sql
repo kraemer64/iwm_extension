@@ -15,3 +15,8 @@ CREATE TABLE tx_iwmextension_user (
    password varchar(20) DEFAULT '' NOT NULL,
    birthdate date DEFAULT '' NOT NULL,
 );
+
+CREATE TABLE tx_iwmextension_login (
+   email varchar(40) DEFAULT '' NOT NULL,
+   password varchar(20) DEFAULT '' NOT NULL,
+);
