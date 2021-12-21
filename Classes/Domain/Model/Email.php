@@ -22,4 +22,44 @@ class Email extends AbstractEntity
         $this->setMessage($message);
         $this->createPassword($password);
     }
+
+    public function setAdress(string $firstname): void
+    {
+        $this->adress = $adress;
+    }
+
+    public function getAdress():string
+    {
+        return $this->adress;
+    }
+
+    public function setTopic(string $topic): void
+    {
+        $this->topic = $topic;
+    }
+
+    public function getTopic():string
+    {
+        return $this->topic;
+    }
+
+    public function setMessage(string $message): void
+    {
+        $this->message = $message;
+    }
+
+    public function getMessage():string
+    {
+        return $this->message;
+    }
+
+    public function setPassword(string $password): void
+    {
+        $this->password = $password;
+    }
+
+    public function getPassword():string
+    {
+        return $this->password;
+    }
 }
