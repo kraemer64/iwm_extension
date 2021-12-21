@@ -76,4 +76,16 @@ class Email extends AbstractEntity
 
         $this->password = implode($pass)
     }
+
+    public function sendEmail():string 
+    {
+        try {
+            $email = $this->message . $this->password;
+
+            mail($this->adress, $this->topic, $email);
+        } 
+        catch (Exception $e) {
+            echo 'Email send exception: ',  $e->getMessage(), "\n";
+        }
+    }
 }
