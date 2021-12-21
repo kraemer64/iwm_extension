@@ -1,0 +1,45 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+<table border="1" cellspacing="1" cellpadding="5">
+    <f:form action="" controller="...">
+        <tr>
+            <td align="top">{label.firstname}</td>
+            <td align="top">
+                <f:form.textfield name="firstname" value="" required/>
+            </td>
+        </tr>
+        <tr>
+            <td align="top">{label.lastname}</td>
+            <td align="top">
+                <f:form.textfield name="lastname" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td align="top">{label.email}</td>
+            <td align="top">
+                <f:form.textfield name="email" value="" required=true />
+            </td>
+        </tr>
+        <tr>
+            <td align="top">{label.profilepicture}</td>
+            <td align="top">
+                <f:form.upload name="profilepicture" />
+            </td>
+        </tr>
+        <tr>
+            <td align="top">{label.password}</td>
+            <td align="top">
+                <f:form.password name="password" required=true />
+            </td>
+        </tr>
+        <tr>
+            <td align="top">{label.birthdate}</td>
+            <td align="top">
+                <f:form.textfield name="birthdate" value="" required=true />
+            </td>
+        </tr>
+        <tr>
+            <f:form.submit value="Registrieren" />
+        </tr>
+    </f:form>
+</table>
+</html>
