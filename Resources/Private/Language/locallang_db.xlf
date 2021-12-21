@@ -7,7 +7,7 @@
                 <source>IWM Extension</source>
             </trans-unit>
             <trans-unit id="tx_iwmextension_domain_model_formular">
-                <source>Form</source>
+                <source>Registration Form</source>
             </trans-unit>
             <trans-unit id="tx_iwmextension_domain_model_formular.firstname">
                 <source>Firstname Label</source>
@@ -28,6 +28,9 @@
                 <source>Birthdate Label</source>
             </trans-unit>
 
+            <trans-unit id="tx_iwmextension_login">
+                <source>Login Form</source>
+            </trans-unit>
             <trans-unit id="tx_iwmextension_login.email">
                 <source>Email Label</source>
             </trans-unit>
