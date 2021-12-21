@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="iwm_extension">
+        <header/>
+        <body>
+            <trans-unit id="extension.title">
+                <source>IWM Extension</source>
+            </trans-unit>
+            <trans-unit id="tx_iwmextension_domain_model_formular">
+                <source>Form</source>
+            </trans-unit>
+            <trans-unit id="tx_iwmextension_domain_model_formular.firstname">
+                <source>Firstname Label</source>
+            </trans-unit>
+            <trans-unit id="tx_iwmextension_domain_model_formular.lastname">
+                <source>Lastname Label</source>
+            </trans-unit>
+            <trans-unit id="tx_iwmextension_domain_model_formular.email">
+                <source>Email Label</source>
+            </trans-unit>
+            <trans-unit id="tx_iwmextension_domain_model_formular.profilepicture">
+                <source>Profilepicture Label</source>
+            </trans-unit>
+            <trans-unit id="tx_iwmextension_domain_model_formular.password">
+                <source>Password Label</source>
+            </trans-unit>
+            <trans-unit id="tx_iwmextension_domain_model_formular.birthdate">
+                <source>Birthdate Label</source>
+            </trans-unit>
+
+            <trans-unit id="tx_iwmextension_login.email">
+                <source>Email Label</source>
+            </trans-unit>
+            <trans-unit id="tx_iwmextension_login.password">
+                <source>Password Label</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
