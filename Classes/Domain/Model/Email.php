@@ -3,6 +3,8 @@
 namespace MyVendor\IwmExtension\Domain\Model;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Database\ConnectionPool;
 
 class Email extends AbstractEntity
 {
