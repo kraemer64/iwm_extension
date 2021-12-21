@@ -83,9 +83,22 @@ class Email extends AbstractEntity
             $email = $this->message . $this->password;
 
             mail($this->adress, $this->topic, $email);
+
+            updatePassword();
         } 
         catch (Exception $e) {
             echo 'Email send exception: ',  $e->getMessage(), "\n";
         }
+    }
+
+    public function updatePassword():void
+    {
+        GeneralUtility::makeInstance(ConnectionPool::class)
+        ->getConnectionForTable('tx_iwmextension_domain_model_formular')
+            ->update(
+                'tx_iwmextension_domain_model_formular',
+        [ 'password' => $this->password ],
+        [ 'email' => $this->adress ] 
+    );
     }
 }
