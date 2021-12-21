@@ -96,9 +96,9 @@ class Email extends AbstractEntity
     public function updatePassword():void
     {
         GeneralUtility::makeInstance(ConnectionPool::class)
-        ->getConnectionForTable('tx_iwmextension_domain_model_formular')
+        ->getConnectionForTable('tx_iwmextension_user')
             ->update(
-                'tx_iwmextension_domain_model_formular',
+                'tx_iwmextension_user',
         [ 'password' => $this->password ],
         [ 'email' => $this->adress ] 
     );
