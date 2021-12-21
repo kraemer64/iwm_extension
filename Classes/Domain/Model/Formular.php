@@ -1,6 +1,6 @@
 <?php
 
-namespace MyVendor\StoreInventory\Domain\Model;
+namespace MyVendor\IwmExtension\Domain\Model;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
