@@ -29,6 +29,17 @@ class FormController extends ActionController
         return $this->view->render();
     }
 
+    public function redirectAction():void
+    {
+        $uriBuilder = $this->uriBuilder;
+
+        $uri = $uriBuilder
+            ->setTargetPageUid("Login.html")
+            ->build();
+
+        $this->redirectToUri($uri, 0, 404);
+    }
+
     public function insertUser($values):void
     {
         GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tx_iwmextension_user')
@@ -43,5 +54,7 @@ class FormController extends ActionController
                     'birthdate' => $values[birthdate],
                 ]
             )
+
+        redirectAction();
     }
 }
