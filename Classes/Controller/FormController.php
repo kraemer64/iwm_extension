@@ -40,7 +40,7 @@ class FormController extends ActionController
         $this->redirectToUri($uri, 0, 404);
     }
 
-    public function insertUser($values):void
+    public function insertUserAction($values):void
     {
         GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tx_iwmextension_user')
         	->insert(
